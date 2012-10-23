@@ -20,11 +20,12 @@ public void init(){
     
     add(up);
     add (down);
+    
+//----------------------------Up button----------------------------------------
     up.setLocation(75,10);
     up.setBorder(BorderFactory.createEmptyBorder());
     up.setContentAreaFilled(false);
-    up.setIcon(op);
-    
+    up.setIcon(op);    
     
     
     up.addActionListener(new ActionListener() {
@@ -36,8 +37,9 @@ public void init(){
              repaint();            
          }
     });
+//---------------------------Up button end-------------------------------------  
     
-    
+//---------------------------Down button---------------------------------------    
     down.setLocation(75, 150);
     down.setBorder(BorderFactory.createEmptyBorder());
     down.setContentAreaFilled(false);
@@ -55,6 +57,7 @@ public void init(){
     });     
     
     }
+//-----------------------Down button end---------------------------------------
     
 public void paintComponent(Graphics g){
     g.drawString(""+tæller+"", 125, 125);          
